@@ -1,0 +1,1 @@
+console.log('execPath', process.execPath)

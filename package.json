@@ -1,0 +1,43 @@
+{
+  "name": "@zxw/nvmr",
+  "version": "1.0.0",
+  "description": "Relying on Windows NVM to execute commands with a specific version of nodejs",
+  "main": "index.js",
+  "packageManager": "pnpm@8.5.1",
+  "bin": {
+    "nvmr": "./bin/cli.js"
+  },
+  "files": [
+    "bin",
+    "demo.js"
+  ],
+  "simple-git-hooks": {
+    "commit-msg": "./node_modules/.bin/commitlint --edit"
+  },
+  "scripts": {
+    "postinstall": "pnpm run update-git-hooks",
+    "update-git-hooks": "simple-git-hooks",
+    "test:exist": "node ./index.js --version=16.13.0 npm run demo",
+    "test:notExist": "node ./index.js --version=10.80.0 npm run demo",
+    "demo": "node ./demo.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zuixinwang/nvmr.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zuixinwang/nvmr/issues"
+  },
+  "homepage": "https://github.com/zuixinwang/nvmr#readme",
+  "dependencies": {
+    "consola": "^3.1.0",
+    "mri": "^1.2.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.1.7",
+    "simple-git-hooks": "^2.8.1"
+  }
+}
