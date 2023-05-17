@@ -23,19 +23,21 @@
     "test:exist": "node ./index.js --version=16.13.0 npm run demo",
     "test:notExist": "node ./index.js --version=10.80.0 npm run demo",
     "demo": "node ./demo.js",
-    "release": "bumpp && npm publish"
+    "lg": "npm login --registry https://registry.npmjs.org/",
+    "pub": "npm publish --registry https://registry.npmjs.org/",
+    "release": "bumpp && npm run pub"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/zuixinwang/nvmr.git"
+    "url": "git+https://github.com/zuixinwang/nvm-run.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/zuixinwang/nvmr/issues"
+    "url": "https://github.com/zuixinwang/nvm-run/issues"
   },
-  "homepage": "https://github.com/zuixinwang/nvmr#readme",
+  "homepage": "https://github.com/zuixinwang/nvm-run#readme",
   "dependencies": {
     "consola": "^3.1.0",
     "mri": "^1.2.0"
