@@ -14,12 +14,16 @@
   "simple-git-hooks": {
     "commit-msg": "./node_modules/.bin/commitlint --edit"
   },
+  "publishConfig": {
+    "registry": "https://npmjs.com"
+  },
   "scripts": {
     "postinstall": "pnpm run update-git-hooks",
     "update-git-hooks": "simple-git-hooks",
     "test:exist": "node ./index.js --version=16.13.0 npm run demo",
     "test:notExist": "node ./index.js --version=10.80.0 npm run demo",
-    "demo": "node ./demo.js"
+    "demo": "node ./demo.js",
+    "release": "bumpp && npm publish"
   },
   "repository": {
     "type": "git",
@@ -37,7 +41,10 @@
     "mri": "^1.2.0"
   },
   "devDependencies": {
+    "@commitlint/cli": "^17.6.3",
+    "@commitlint/config-conventional": "^17.6.3",
     "@types/node": "^20.1.7",
+    "bumpp": "^9.1.0",
     "simple-git-hooks": "^2.8.1"
   }
 }
