@@ -1,5 +1,5 @@
 {
-  "name": "zuixinwang-nvmr",
+  "name": "nvm-run",
   "version": "1.0.0",
   "description": "Relying on Windows NVM to execute commands with a specific version of nodejs",
   "main": "index.js",

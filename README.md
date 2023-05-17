@@ -7,7 +7,7 @@ This depends on [`windows nvm`](https://github.com/coreybutler/nvm-windows), ple
 1. Install this package
 
     ``` bash
-    npm install zuixinwang-nvmr -D
+    npm install nvm-run -D
     ```
 
 2. Update `package.json` `scripts`
