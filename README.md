@@ -7,7 +7,7 @@ This depends on [`windows nvm`](https://github.com/coreybutler/nvm-windows), ple
 1. Install this package
 
     ``` bash
-    npm install @zxw/nvmr -D
+    npm install zxw-nvmr -D
     ```
 
 2. Update `package.json` `scripts`

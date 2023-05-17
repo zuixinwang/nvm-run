@@ -1,5 +1,5 @@
 {
-  "name": "@zxw/nvmr",
+  "name": "zxw-nvmr",
   "version": "1.0.0",
   "description": "Relying on Windows NVM to execute commands with a specific version of nodejs",
   "main": "index.js",
@@ -15,7 +15,7 @@
     "commit-msg": "./node_modules/.bin/commitlint --edit"
   },
   "publishConfig": {
-    "registry": "https://npmjs.com"
+    "registry": "https://registry.npmjs.org/"
   },
   "scripts": {
     "postinstall": "pnpm run update-git-hooks",
