@@ -1,6 +1,6 @@
 {
   "name": "nvm_run",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Relying on Windows NVM to execute commands with a specific version of nodejs",
   "main": "index.js",
   "packageManager": "pnpm@8.5.1",
