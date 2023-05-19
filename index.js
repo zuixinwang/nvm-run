@@ -45,6 +45,7 @@ const run = async () => {
             process.exit(0)
         }
     }
+    consola.success(`Start to run Nodejs on v${version}.`)
     const child = exec(command, {
         env: {
             ...process.env,
