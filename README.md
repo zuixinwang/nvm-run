@@ -9,7 +9,7 @@ This depends on [`windows nvm`](https://github.com/coreybutler/nvm-windows), ple
 1. Install this package
 
     ``` bash
-    npm install nvm-run -D
+    npm install nvm_run -D
     ```
 
 2. Update `package.json` `scripts`
