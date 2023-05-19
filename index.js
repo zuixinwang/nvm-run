@@ -30,6 +30,10 @@ const run = async () => {
         consola.error('Command not exist!')
         process.exit(0)
     }
+    if (!version) {
+        consola.error('version option is required!')
+        process.exit(0)
+    }
     let { Path } = process.env
     if (version) {
         const stdout = await getNvmDir()
